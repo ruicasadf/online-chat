@@ -1,0 +1,81 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  /* Общие стили для заголовков */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+  color: #e0e0e0;
+  margin-bottom: 10px;
+  }
+
+  /* Основной контейнер приложения */
+  .app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  }
+
+  /* Адаптивные стили для портретной ориентации (телефоны) */
+  @media (max-width: 768px) {
+  .app-container {
+  padding: 10px; /* Уменьшаем отступы */
+  }
+  }
+
+  /* Адаптивные стили для альбомной ориентации (компьютеры) */
+  @media (min-width: 769px) {
+  .app-container {
+  flex-direction: row; /* Располагаем элементы горизонтально */
+  align-items: stretch; /* Растягиваем элементы по высоте */
+  }
+  }
+
+  /* Адаптивные стили для разных разрешений экранов */
+  /* Для очень маленьких экранов (до 320px) */
+  @media (max-width: 320px) {
+  body {
+  font-size: 0.8em;
+  }
+  }
+
+  /* Для маленьких экранов (321px - 480px) */
+  @media (min-width: 321px) and (max-width: 480px) {
+  body {
+  font-size: 0.9em;
+  }
+  }
+
+  /* Для средних экранов (481px - 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+  body {
+  font-size: 1em;
+  }
+  }
+
+  /* Для больших экранов (769px - 1024px) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+  body {
+  font-size: 1.1em;
+  }
+  }
+
+  /* Для очень больших экранов (1025px и больше) */
+  @media (min-width: 1025px) {
+  body {
+  font-size: 1.2em;
+  }
+  }
